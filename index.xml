@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yinnner&#39;s Blog</title>
-    <link>https://yinnner.blog.io/</link>
+    <link>https://yinnner.github.io/</link>
     <description>Recent content on Yinnner&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 24 Jan 2018 17:54:11 +0800</lastBuildDate>
     
-	<atom:link href="https://yinnner.blog.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yinnner.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>你好，Hugo</title>
-      <link>https://yinnner.blog.io/post/first/</link>
+      <link>https://yinnner.github.io/post/first/</link>
       <pubDate>Wed, 24 Jan 2018 17:54:11 +0800</pubDate>
       
-      <guid>https://yinnner.blog.io/post/first/</guid>
+      <guid>https://yinnner.github.io/post/first/</guid>
       <description>JAVA实验1 面向接口编程 思想基础 博客&amp;ndash;面向接口编程详解 与面向对象编程的关系 面向接口编程和面向对象编程并不是平级的。 它并不是比面</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://yinnner.blog.io/about/</link>
+      <link>https://yinnner.github.io/about/</link>
       <pubDate>Wed, 24 Jan 2018 17:25:10 +0800</pubDate>
       
-      <guid>https://yinnner.blog.io/about/</guid>
+      <guid>https://yinnner.github.io/about/</guid>
       <description></description>
     </item>
     
