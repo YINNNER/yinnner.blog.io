@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Yinnner">
+		<meta name="description" content="这里是Yinnner的个人博客">
+		<meta name="generator" content="Hugo 0.34" />
+		<title>你好，Hugo &middot; Yinnner&#39;s Blog</title>
+		<link rel="shortcut icon" href="https://yinnner.blog.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://yinnner.blog.io/css/style.css">
+		<link rel="stylesheet" href="https://yinnner.blog.io/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://yinnner.blog.io/css/monosocialiconsfont.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://yinnner.blog.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://yinnner.blog.io/posts'>Archive</a>
+	<a href='https://yinnner.blog.io/tags'>Tags</a>
+	<a href='https://yinnner.blog.io/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        你好，Hugo
+                    </h1>
+                    <h2 class="headline">
+                    Jan 24, 2018 17:54
+                    · 102 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://yinnner.blog.io/tags/experiment">Experiment</a>
+                          
+                              <a href="https://yinnner.blog.io/tags/java">Java</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<h1 id="java实验1">JAVA实验1</h1>
+
+<h2 id="面向接口编程">面向接口编程</h2>
+
+<h3 id="思想基础">思想基础</h3>
+
+<p><a href="https://www.cnblogs.com/leoo2sk/archive/2008/04/10/1146447.html">博客&ndash;面向接口编程详解</a></p>
+
+<h4 id="与面向对象编程的关系">与面向对象编程的关系</h4>
+
+<ul>
+<li>面向接口编程和面向对象编程并不是平级的。</li>
+<li>它并不是比面向对象编程更先进的一种独立的编程思想。</li>
+<li>而是附属于面向对象思想体系，属于其一部分。</li>
+<li>是面向对象编程体系中的思想精髓之一。</li>
+</ul>
+
+<h4 id="接口的本质">接口的本质</h4>
+
+<ol>
+<li>接口是一组规则的集合，它规定了实现本接口的类或接口必须拥有的一组规则。体现了自然界“如果你是……则必须能……”的理念。</li>
+<li>接口是在一定粒度视图上同类事物的抽象表示。注意这里强调了在一定粒度视图上，因为“同类事物”这个概念是相对的，它因为粒度视图不同而不同。</li>
+</ol>
+
+<ul>
+<li>面向对象思想的核心之一，就是模拟真实世界，把真实世界中的事物抽象成类，整个程序靠各个类的实例互相通信、互相协作完成系统功能，这非常符合真实世界的运行状况，也是面向对象思想的精髓。</li>
+</ul>
+
+<h4 id="对面向接口编程的理解">对面向接口编程的理解</h4>
+
+<ul>
+<li>在系统分析和架构中，分清层次和依赖关系，每个层次不是直接向其上层提供服务（即不是直接实例化在上层中），而是通过定义一组接口，仅向上层暴露其接口功能，上层对于下层仅仅是接口依赖，而不依赖具体类。</li>
+<li>“面向接口编程”中的接口是一种思想层面的用于实现多态性、提高软件灵活性和可维护性的架构部件，而具体语言中的“接口”是将这种思想中的部件具体实施到代码里的手段。</li>
+</ul>
+
+<h4 id="区分抽象类和接口">区分抽象类和接口</h4>
+
+<ol>
+<li>抽象类和接口的区别在于使用动机：
+
+<ul>
+<li>==使用抽象类是为了代码的复用。==</li>
+<li>==使用接口的动机是为了实现多态性。==</li>
+</ul></li>
+<li>另一个区别在于：
+
+<ul>
+<li>抽象类和它的子类之间应该是==一般和特殊的关系==。</li>
+<li>而接口仅仅是它的子类==应该实现的一组规则。==（当然，有时也可能存在一般与特殊的关系，但我们使用接口的目的不在这里）</li>
+</ul></li>
+</ol>
+
+<h2 id="读取数据类-scanner和bufferedreader">读取数据类：Scanner和BufferedReader</h2>
+
+<ul>
+<li>BufferedReader字符输入流类</li>
+<li>Scanner扫描类</li>
+</ul>
+
+<p>通过这两个类对InputStream进行包装就可以进行读取数据了。</p>
+
+<h3 id="scanner">Scanner</h3>
+
+<ul>
+<li>使用分隔符模式将其输入分解为标记，默认情况下该分隔符模式与空白匹配。</li>
+<li>使用不同的 next 方法将得到的标记转换为不同类型的值。</li>
+</ul>
+
+<p>输入数据的类Scanner，位于java.util包中，Scanner的具体用法为</p>
+
+<p><code>Scanner input = new Scanner(System.in);</code></p>
+
+<p>通过 new创建一个Scanner对象，Scanner需要传入一个System.in作为参数，我们可以看作是Scanner通过其内部机制将 System.in包装起来而实现数据的读取工作的。</p>
+
+<ul>
+<li>Scanner对象通过一系列的<code>input.nextxxx();</code>方法来读取相应的基本类型的数据。</li>
+<li>通过<code>input.hasNextxxx();</code>方法来判断是否还有下一个数据。</li>
+<li><code>input.nextLine()</code> 输入一行数据,一般会将你输入的数据当做字符串处理</li>
+<li>需要注意的是，Scanner读取数据是按空格符，这其中包括空格键，Tab键，Enter键。</li>
+<li>只要遇到其中之一，Scanner的方法就会返回下一个输入 ，Scanner类默认使用的分隔符(delimiter)是空格。</li>
+<li>可以调用Scanner类里的useDelimiter方法，设置它的分隔符，从而解决问题。</li>
+</ul>
+
+<h4 id="nextxx-相关方法详解"><code>nextXX()</code>相关方法详解</h4>
+
+<ul>
+<li>scanner可以允许输入多行。</li>
+<li>next() 每次取到一个==间隔符前面的数据== 如： 输入 a b c 取值应该是a，因为a后面有空格</li>
+<li>nextLine() 每次取一个==换行符前面的数据== 如：输入 a b c 回车，取值 就是a b c</li>
+<li>nextInt() 是==取next() 然后把字符串解析==成一个int数字。</li>
+<li>hasNextInt() 是判断下次调用next()是否可以得到一个可以安全解析成int的字符串。如果已经到达输入的结尾，或者下一个next()的返回值不能解析为一个数字，即不符合数字的格式，那么返回发false</li>
+</ul>
+
+<h3 id="bufferedreader">BufferedReader</h3>
+
+<p>BufferedReader位于java.io包中，</p>
+
+<ul>
+<li><p>读取数据比较固定，</p></li>
+
+<li><p>这样格式也就相对来说比较单一，</p></li>
+</ul>
+
+<p>​</p>
+
+<p>只要记住就这一读取数据的方法</p>
+
+<p><code>BufferedReader br = new BufferedReader(new InputStreamReader(System.in));</code></p>
+
+<ul>
+<li>这个BufferedReader对象通过<code>readLine();</code>方法来读取数据，<code>readLine()</code>是按Enter回车来读取一行数据的，只要在回车键之前的都会被<code>readLine();</code>方法返回。
+
+<ul>
+<li><code>readLine()</code>方法是一个阻塞方法，==当没有数据读取时，就一直会阻塞在那不返回null,造成EOFException异常。==</li>
+<li>读取返回null的情况：当数据读取完后并不会一定返回null,只有当数据流发生异常、服务器另一端被close时才会返回null，才能读取结束。</li>
+<li>正常读取数据：当数据读取到BufferedReader的默认上限8192个字符时、遇到&rdquo;/r&rdquo;、&rdquo;/n&rdquo;、&rdquo;/r/n&rdquo;时才会返回，我们才获取到了读取的数据。</li>
+</ul></li>
+<li>要使用BufferedReader输入一些字符之外的类型的数据，就要相对比较麻烦，需要通过一些XXXX.parseXxx()；来转换相应的数据类型。</li>
+<li>虽然，麻烦一些，但通过在一些OJ系统上的和Scanner作对比，BufferedReader的效率要比Scanner高一倍，这个差距可想而知，读取的数据越多，效果就越明显。</li>
+</ul>
+
+<h3 id="不同点">不同点</h3>
+
+<ul>
+<li>BufferedReader是支持同步的，而Scanner不支持。如果我们处理多线程程序，BufferedReader应当使用。</li>
+<li>==BufferedReader==相对于Scanner有==足够大的缓冲区内存==。</li>
+<li>Scanner有很少的缓冲区(1KB字符缓冲)相对于BufferedReader(8KB字节缓冲)，但是这是绰绰有余的。</li>
+<li>==BufferedReader==相对于Scanner来说要==快一点==，因为Scanner对输入数据进行类解析，而BufferedReader只是简单地读取字符序列。</li>
+</ul>
+
+<h2 id="java传参机制">JAVA传参机制</h2>
+
+<ol>
+<li><strong>基本数据类型</strong>：基本类型作为函数参数进行传递，传递的是值，也就是把==实参的值拷贝一份传给形参==，之后在函数体中所有的==操作都是在形参上==，==永远不会改变实参的值==。</li>
+<li><strong>引用类型</strong>：通过对象进行传递，其实传递的是引用，也就是将==对象的引用拷贝一份传给形参==，形参引用和实参引用指向的是同一个对象，但是在函数体中，我们所有的操作==都只是对形参引用进行的，虽然可以改变指向对象的内容==，==但是永远不会改变实参的值。==</li>
+</ol>
+
+<h2 id="java语法相关">JAVA语法相关</h2>
+
+<ul>
+<li>\t不等于空格。</li>
+</ul>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+    <p class="small">
+    
+       © Copyright 2018 <i class="fa fa-heart" aria-hidden="true"></i> Yinnner
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://yinnner.blog.io/js/jquery-2.2.4.min.js"></script>
+<script src="https://yinnner.blog.io/js/main.js"></script>
+<script src="https://yinnner.blog.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

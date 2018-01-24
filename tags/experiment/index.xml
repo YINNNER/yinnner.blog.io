@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experiment on Yinnner&#39;s Blog</title>
+    <link>https://yinnner.blog.io/tags/experiment/</link>
+    <description>Recent content in Experiment on Yinnner&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 24 Jan 2018 17:54:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://yinnner.blog.io/tags/experiment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>你好，Hugo</title>
+      <link>https://yinnner.blog.io/post/first/</link>
+      <pubDate>Wed, 24 Jan 2018 17:54:11 +0800</pubDate>
+      
+      <guid>https://yinnner.blog.io/post/first/</guid>
+      <description>JAVA实验1 面向接口编程 思想基础 博客&amp;ndash;面向接口编程详解
+与面向对象编程的关系  面向接口编程和面向对象编程并不是平级的。 它并不是比面向对象编程更先进的一种独立的编程思想。 而是附属于面向对象思想体系，属于其一部分。 是面向对象编程体系中的思想精髓之一。  接口的本质  接口是一组规则的集合，它规定了实现本接口的类或接口必须拥有的一组规则。体现了自然界“如果你是……则必须能……”的理念。 接口是在一定粒度视图上同类事物的抽象表示。注意这里强调了在一定粒度视图上，因为“同类事物”这个概念是相对的，它因为粒度视图不同而不同。   面向对象思想的核心之一，就是模拟真实世界，把真实世界中的事物抽象成类，整个程序靠各个类的实例互相通信、互相协作完成系统功能，这非常符合真实世界的运行状况，也是面向对象思想的精髓。  对面向接口编程的理解  在系统分析和架构中，分清层次和依赖关系，每个层次不是直接向其上层提供服务（即不是直接实例化在上层中），而是通过定义一组接口，仅向上层暴露其接口功能，上层对于下层仅仅是接口依赖，而不依赖具体类。 “面向接口编程”中的接口是一种思想层面的用于实现多态性、提高软件灵活性和可维护性的架构部件，而具体语言中的“接口”是将这种思想中的部件具体实施到代码里的手段。  区分抽象类和接口  抽象类和接口的区别在于使用动机：  ==使用抽象类是为了代码的复用。== ==使用接口的动机是为了实现多态性。==  另一个区别在于：  抽象类和它的子类之间应该是==一般和特殊的关系==。 而接口仅仅是它的子类==应该实现的一组规则。==（当然，有时也可能存在一般与特殊的关系，但我们使用接口的目的不在这里）   读取数据类：Scanner和BufferedReader  BufferedReader字符输入流类 Scanner扫描类  通过这两个类对InputStream进行包装就可以进行读取数据了。
+Scanner  使用分隔符模式将其输入分解为标记，默认情况下该分隔符模式与空白匹配。 使用不同的 next 方法将得到的标记转换为不同类型的值。  输入数据的类Scanner，位于java.util包中，Scanner的具体用法为
+Scanner input = new Scanner(System.in);
+通过 new创建一个Scanner对象，Scanner需要传入一个System.in作为参数，我们可以看作是Scanner通过其内部机制将 System.in包装起来而实现数据的读取工作的。
+ Scanner对象通过一系列的input.nextxxx();方法来读取相应的基本类型的数据。 通过input.hasNextxxx();方法来判断是否还有下一个数据。 input.nextLine() 输入一行数据,一般会将你输入的数据当做字符串处理 需要注意的是，Scanner读取数据是按空格符，这其中包括空格键，Tab键，Enter键。 只要遇到其中之一，Scanner的方法就会返回下一个输入 ，Scanner类默认使用的分隔符(delimiter)是空格。 可以调用Scanner类里的useDelimiter方法，设置它的分隔符，从而解决问题。  nextXX()相关方法详解  scanner可以允许输入多行。 next() 每次取到一个==间隔符前面的数据== 如： 输入 a b c 取值应该是a，因为a后面有空格 nextLine() 每次取一个==换行符前面的数据== 如：输入 a b c 回车，取值 就是a b c nextInt() 是==取next() 然后把字符串解析==成一个int数字。 hasNextInt() 是判断下次调用next()是否可以得到一个可以安全解析成int的字符串。如果已经到达输入的结尾，或者下一个next()的返回值不能解析为一个数字，即不符合数字的格式，那么返回发false  BufferedReader BufferedReader位于java.</description>
+    </item>
+    
+  </channel>
+</rss>
